@@ -20,7 +20,7 @@ namespace WebApp.Controllers
             ViewData["color"] = CharRepresentation.Color;
             ViewData["size"] = CharRepresentation.Size;
             ViewData["weight"] = CharRepresentation.Weight;
-            ViewData["appTitle"] = CharRepresentation._windowName;
+            ViewData["appTitle"] = CharRepresentation.windowName;
             return View();
         }
     }

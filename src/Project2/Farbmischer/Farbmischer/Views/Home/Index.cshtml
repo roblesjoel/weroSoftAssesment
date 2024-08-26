@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["appTitle"]</title>
+    <meta charset="utf-8" />
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            color: green;
+            text-align: left;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center
+        }
+        li > p{
+            margin-right: 10px;
+            font-weight: bold;
+            color: black;
+        }
+        li > input {
+            font-size: 16px;
+            padding: 5px;
+            width: 60px;
+            border: solid 2px;
+            height: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 600px;
+            border: solid 2px blue;
+            justify-content: space-between;
+
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+        .display{
+            display: flex;
+            align-items: center;
+            margin-inline: 20px;
+            border: solid 1px blue;
+            background-color: rgb(@ViewBag.red, @ViewBag.green, @ViewBag.blue);
+            height: 100px;
+            width: 100px
+        }
+        .button{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 10px;
+            padding-block: 10px;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div class="container">
+
+            <div class="items">
+
+                <div class="inputs">
+                    <ul>
+                        <li>
+                            <p>Rot</p>
+                            <input type="text" id="red" name="red" value="@ViewBag.red" />
+                        </li>
+                        <li>
+                            <p>Grün</p>
+                            <input type="text" id="gree" name="green" value="@ViewBag.green" />
+                        </li>
+                        <li>
+                            <p>Blau</p>
+                            <input type="text" id="blue" name="blue" value="@ViewBag.blue" />
+                        </li>
+                    </ul>
+                </div>
+
+                @if (ViewBag.startUp)
+                {
+                    <div class="display" style="background-color: red">
+                    </div>
+                }
+                else
+                {
+                    <div class="display">
+                    </div>
+                }
+
+                
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Anweden" class="" />
+            </div>
+
+        </div>
+
+    }
+</body>
+</html>

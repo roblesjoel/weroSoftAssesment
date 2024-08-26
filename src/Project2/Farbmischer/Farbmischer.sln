@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farbmischer", "Farbmischer\Farbmischer.csproj", "{EE9805A0-5962-40C5-B1EA-B95B11BE1AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarbmisherLib", "FarbmisherLib\FarbmisherLib.csproj", "{0C388F2B-8EDE-4971-A9C2-7B9B8E87BF4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE9805A0-5962-40C5-B1EA-B95B11BE1AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9805A0-5962-40C5-B1EA-B95B11BE1AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9805A0-5962-40C5-B1EA-B95B11BE1AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9805A0-5962-40C5-B1EA-B95B11BE1AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C388F2B-8EDE-4971-A9C2-7B9B8E87BF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C388F2B-8EDE-4971-A9C2-7B9B8E87BF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C388F2B-8EDE-4971-A9C2-7B9B8E87BF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C388F2B-8EDE-4971-A9C2-7B9B8E87BF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95297F3E-89D5-4BB7-931E-8BA88836FE09}
+	EndGlobalSection
+EndGlobal

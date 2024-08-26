@@ -4,7 +4,7 @@
     public static class CharRepresentation
     {
         // Values & Defaults
-        public static string _windowName = "Assessment weroSoft von Joel Robles";
+        public static string windowName = "Assessment weroSoft von Joel Robles";
         private static string _color = "red";
         private static int _size = 42;
         private static int _weight = 100;
