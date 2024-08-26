@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Project1ClassLib\Project1ClassLib.csproj" />
+  </ItemGroup>
+
 </Project>
